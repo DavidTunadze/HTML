@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Playwrite;
+    src: url(./font/PlaywriteITModerna-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(./img/mercedes-amg-petronas-wallpaper-sport-logo-formula-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+
+        h1 {
+            font-family: Playwrite;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            border: 2px solid yellow;
+            border-radius: 20px;
+            width: 605;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            ul {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+                height: 30px;
+                color: red;
+
+                li {
+                    width: 100px;
+                    height: 22px;
+                    list-style: none;
+                    text-align: center;
+                }
+
+                span {
+                    //This must be Hover.
+                    position: absolute;
+                    width: 100px;
+                    height: 27px;
+                    border: 1px solid blue;
+                    border-radius: 20px;
+                    background-color: white;
+                    z-index: -1;
+                }
+            }
+        }
+
+    }
+}
